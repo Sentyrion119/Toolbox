@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+input[type='range'] {
+  cursor: pointer;
+}
+
+input[type='color'] {
+  padding: 2px;
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.15);
+}
