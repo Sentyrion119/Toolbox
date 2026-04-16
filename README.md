@@ -2,7 +2,7 @@
 
 Free online tools for everyday file tasks — fast, private, and open source. Everything runs in your browser. No uploads, no accounts, no tracking.
 
-**Live demo:** _link coming soon_
+**Live demo:** https://plaintools.vercel.app/en
 
 ---
 
