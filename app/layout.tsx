@@ -34,7 +34,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang={lang} className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        {/* Add your Google Analytics or Plausible script here */}
+        {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID && (
+          <>
+            <meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID} />
+            <script
+              async
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID}`}
+              crossOrigin="anonymous"
+            />
+          </>
+        )}
       </head>
       <body className="font-sans antialiased bg-[#0a0a0a] text-white min-h-screen">
         {children}
