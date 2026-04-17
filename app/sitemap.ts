@@ -8,6 +8,9 @@ const paths = [
   '/tools/image-compressor',
   '/tools/qr-code',
   '/tools/pdf-converter',
+  '/tools/image-converter',
+  '/tools/image-resizer',
+  '/tools/password-generator',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

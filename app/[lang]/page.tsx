@@ -29,7 +29,7 @@ export async function generateMetadata({
   };
 }
 
-const toolSlugs = ['image-compressor', 'qr-code', 'pdf-converter'] as const;
+const toolSlugs = ['image-compressor', 'qr-code', 'pdf-converter', 'image-converter', 'image-resizer', 'password-generator'] as const;
 
 function getToolIcon(slug: (typeof toolSlugs)[number]) {
   if (slug === 'image-compressor') {
@@ -49,10 +49,40 @@ function getToolIcon(slug: (typeof toolSlugs)[number]) {
       </svg>
     );
   }
+  if (slug === 'pdf-converter') {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <path d="M14 2v6h6M9 13h6M9 17h4" />
+      </svg>
+    );
+  }
+  if (slug === 'image-converter') {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="8" height="8" rx="1" />
+        <rect x="13" y="13" width="8" height="8" rx="1" />
+        <path d="m16 3 3 3-3 3" />
+        <path d="M5 6h14" />
+        <path d="m8 21-3-3 3-3" />
+        <path d="M19 18H5" />
+      </svg>
+    );
+  }
+  if (slug === 'image-resizer') {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M15 3h6v6" />
+        <path d="M9 21H3v-6" />
+        <path d="M21 3l-7 7" />
+        <path d="M3 21l7-7" />
+      </svg>
+    );
+  }
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-      <path d="M14 2v6h6M9 13h6M9 17h4" />
+      <rect x="3" y="11" width="18" height="11" rx="2" />
+      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
     </svg>
   );
 }
@@ -69,6 +99,9 @@ export default function HomePage({ params }: { params: { lang: string } }) {
     { slug: 'image-compressor', ...toolKeys.imageCompressor },
     { slug: 'qr-code', ...toolKeys.qrCode },
     { slug: 'pdf-converter', ...toolKeys.pdfTool },
+    { slug: 'image-converter', ...toolKeys.imageConverter },
+    { slug: 'image-resizer', ...toolKeys.imageResizer },
+    { slug: 'password-generator', ...toolKeys.passwordGenerator },
   ];
 
   return (
