@@ -1,0 +1,22 @@
+# QuickTools
+
+> Free online tools for images, PDFs, and QR codes. All processing runs entirely in your browser — files are never uploaded to a server.
+
+No account required. No sign-up. Open source.
+
+Available in English and French at https://quicktools.vercel.app
+
+## Tools
+
+- [Image Compressor](https://quicktools.vercel.app/en/tools/image-compressor): Compress JPG, PNG, and WebP images using a quality slider. Shows before/after file sizes. Everything runs locally via the browser-image-compression library — nothing is uploaded.
+
+- [QR Code Generator](https://quicktools.vercel.app/en/tools/qr-code): Generate scannable QR codes from any URL or text. Customize dot style, corner style, foreground/background colors, and output size. Download as PNG or SVG.
+
+- [PDF ↔ Image Converter](https://quicktools.vercel.app/en/tools/pdf-converter): Two modes — convert PDF pages to JPG images (using Mozilla pdf.js), or pack multiple images into a single PDF. Drag, reorder, and download. Fully client-side.
+
+## Key facts
+
+- Client-side only: no file ever leaves the user's device
+- No backend, no storage, no user accounts
+- Open source (GitHub)
+- Supports English (`/en`) and French (`/fr`) routes

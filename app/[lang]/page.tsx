@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import AdSlot from '@/components/AdSlot';
 import Footer from '@/components/Footer';
 import { getDictionary, isValidLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
@@ -120,10 +119,6 @@ export default function HomePage({ params }: { params: { lang: string } }) {
             <p className="text-neutral-400 text-lg max-w-xl">{home.subheading}</p>
           </section>
 
-          <div className="pb-10 overflow-x-auto flex justify-center">
-            <AdSlot size="leaderboard" />
-          </div>
-
           <section className="pb-20">
             <div className="grid sm:grid-cols-3 gap-4">
               {tools.map((tool) => (
@@ -148,10 +143,6 @@ export default function HomePage({ params }: { params: { lang: string } }) {
               ))}
             </div>
           </section>
-
-          <div className="pb-10 flex justify-center">
-            <AdSlot size="rectangle" />
-          </div>
 
           <section className="pb-24 border-t border-neutral-800 pt-16">
             <h2 className="text-xl font-semibold mb-10">{home.why.heading}</h2>
