@@ -11,6 +11,9 @@ Free online tools for everyday file tasks — fast, private, and open source. Ev
 - **Image Compressor** — Reduce JPG, PNG, and WebP file sizes with an adjustable quality slider. The output updates live as you move the slider. Before/after sizes shown instantly.
 - **QR Code Generator** — Turn any URL or text into a scannable QR code. Free users get the classic square style. Unlock rounded and stylized dot patterns by watching a short ad. Download as PNG or SVG.
 - **PDF ↔ Image** — Two tools in one. Convert every page of a PDF to high-resolution JPGs (download individually or as a ZIP), or assemble multiple images into a single PDF.
+- **Image Converter** — Convert images between JPG, PNG, and WebP formats. Runs entirely via the browser Canvas API — no library required.
+- **Image Resizer** — Resize images by exact dimensions or percentage. Supports JPG, PNG, and WebP output. Canvas-based, fully client-side.
+- **Password Generator** — Generate secure random passwords with configurable length and character sets (uppercase, lowercase, numbers, symbols). Uses `window.crypto` for cryptographically secure randomness.
 
 ---
 
@@ -25,6 +28,8 @@ Free online tools for everyday file tasks — fast, private, and open source. Ev
 | PDF rendering | [pdf.js](https://mozilla.github.io/pdf.js/) |
 | PDF creation | [jsPDF](https://github.com/parallax/jsPDF) |
 | ZIP packaging | [JSZip](https://stuk.github.io/jszip/) |
+| Image conversion/resizing | Browser Canvas API (no library) |
+| Password generation | Web Crypto API (`window.crypto`) |
 
 ---
 
