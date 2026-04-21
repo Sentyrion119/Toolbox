@@ -10,7 +10,7 @@ export default function Footer({ lang, copyright }: { lang: Locale; copyright: s
           <LanguageSwitcher currentLang={lang} />
         </div>
         <a
-          href="https://github.com/Sentyrion119/GALAXY"
+          href="https://github.com/Sentyrion119/Toolbox"
           target="_blank"
           rel="noopener noreferrer"
           className="text-neutral-500 hover:text-white transition-colors"
