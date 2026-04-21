@@ -112,6 +112,70 @@ export const fr: Dictionary = {
       seoBody:
         "Cet outil double mode gère la conversion PDF vers image et la création de PDF à partir d'images, entièrement dans votre navigateur. Le convertisseur PDF utilise pdf.js de Mozilla pour rastériser chaque page à 2× de résolution, produisant des JPG nets adaptés à la présentation ou à l'archivage. Passez en mode Images → PDF pour regrouper plusieurs photos dans un seul fichier PDF. Tout le traitement est local : aucun fichier ne quitte votre appareil.",
     },
+
+    imageConverter: {
+      name: "Convertisseur d'images",
+      cardDescription:
+        'Convertissez des images entre les formats PNG, JPG et WebP avec contrôle de qualité. Traitement par lot jusqu\'à 5 fichiers.',
+      h1: "Convertisseur d'images",
+      dropzone: 'Déposez des images ici, ou cliquez pour choisir',
+      dropzoneFormats: 'JPG, PNG, WebP — jusqu\'à 5 fichiers',
+      formatLabel: 'Format de sortie',
+      qualityLabel: 'Qualité :',
+      converting: 'Conversion en cours…',
+      errorFailed: 'La conversion a échoué. Le fichier est peut-être corrompu ou non supporté.',
+      downloadBtn: 'Télécharger',
+      downloadAllBtn: 'Tout télécharger en ZIP',
+      seoBody:
+        "Ce convertisseur d'images fonctionne entièrement dans votre navigateur grâce à l'API Canvas — sans serveur, sans envoi de fichiers. Déposez jusqu'à cinq images à la fois et choisissez un format de sortie : JPG, PNG ou WebP. Pour les formats avec perte comme JPG et WebP, un curseur de qualité permet d'équilibrer taille de fichier et fidélité visuelle. La conversion est instantanée : chaque image est dessinée sur un élément canvas puis exportée sous forme de nouveau blob dans le format cible. Le téléchargement d'un seul fichier converti déclenche une sauvegarde directe ; plusieurs fichiers sont automatiquement regroupés dans une archive ZIP. Tout le traitement étant local, vos images ne transitent jamais par un serveur distant. Le format WebP produit des fichiers nettement plus légers que JPG ou PNG à qualité visuelle équivalente, ce qui en fait le meilleur choix pour le web.",
+    },
+
+    imageResizer: {
+      name: "Redimensionneur d'images",
+      cardDescription:
+        'Redimensionnez des images par dimensions exactes ou en pourcentage. Verrouillez le ratio et téléchargez instantanément.',
+      h1: "Redimensionneur d'images",
+      dropzone: 'Déposez une image ici, ou cliquez pour choisir',
+      dropzoneFormats: 'JPG, PNG, WebP',
+      tabDimensions: 'Dimensions',
+      tabPercentage: 'Pourcentage',
+      widthLabel: 'Largeur (px)',
+      heightLabel: 'Hauteur (px)',
+      lockAspect: "Verrouiller le rapport d'aspect",
+      percentageLabel: 'Échelle :',
+      originalLabel: 'Original',
+      outputLabel: 'Résultat',
+      formatLabel: 'Format de sortie',
+      resizeBtn: "Redimensionner l'image",
+      downloadBtn: "Télécharger l'image redimensionnée",
+      errorFailed: 'Le redimensionnement a échoué. Le fichier est peut-être corrompu ou non supporté.',
+      seoBody:
+        "Ce redimensionneur d'images fonctionne directement dans votre navigateur via l'API Canvas — aucun fichier n'est jamais transmis à un serveur. Importez une image JPG, PNG ou WebP et choisissez entre deux modes. Le mode Dimensions vous permet de saisir des valeurs en pixels pour la largeur et la hauteur ; le verrouillage du rapport d'aspect ajuste automatiquement la dimension opposée pour éviter toute déformation. Le mode Pourcentage redimensionne l'image uniformément de 10 % à 200 % de sa taille d'origine avec un seul curseur. Un sélecteur de format de sortie permet d'enregistrer le résultat en JPG, PNG ou WebP quel que soit le format d'origine. Les dimensions originales et de sortie sont affichées côte à côte en temps réel pour confirmer le résultat avant de lancer le traitement. Aucune donnée n'est stockée, transmise ou journalisée à aucun moment.",
+    },
+
+    passwordGenerator: {
+      name: 'Générateur de mots de passe',
+      cardDescription:
+        'Générez des mots de passe cryptographiquement sécurisés dans votre navigateur. Personnalisez longueur, jeux de caractères et quantité.',
+      h1: 'Générateur de mots de passe',
+      lengthLabel: 'Longueur :',
+      uppercaseLabel: 'Majuscules (A–Z)',
+      lowercaseLabel: 'Minuscules (a–z)',
+      numbersLabel: 'Chiffres (0–9)',
+      symbolsLabel: 'Symboles (!@#$%^&*)',
+      quantityLabel: 'Quantité :',
+      strengthLabel: 'Force',
+      strengthWeak: 'Faible',
+      strengthFair: 'Correcte',
+      strengthStrong: 'Forte',
+      strengthVeryStrong: 'Très forte',
+      copyBtn: 'Copier',
+      copiedBtn: 'Copié !',
+      regenerateBtn: 'Regénérer',
+      errorNoCharset: 'Sélectionnez au moins un type de caractère.',
+      seoBody:
+        "Ce générateur de mots de passe fonctionne entièrement dans votre navigateur et utilise la fonction window.crypto.getRandomValues() de l'API Web Crypto — et non Math.random() — pour garantir un aléatoire cryptographique adapté aux applications sensibles à la sécurité. Choisissez une longueur de 8 à 64 caractères et sélectionnez les jeux de caractères à inclure : majuscules, minuscules, chiffres et symboles. Générez jusqu'à dix mots de passe à la fois pour les comparer facilement. Un indicateur de force évalue la longueur et la variété des caractères, notant le résultat comme Faible, Correcte, Forte ou Très forte avec une barre colorée. Cliquez sur le bouton Copier pour envoyer directement un mot de passe dans votre presse-papiers. Rien n'est transmis à un serveur — tout le processus de génération s'exécute localement dans votre onglet de navigateur.",
+    },
   },
 
   rewardedAd: {
